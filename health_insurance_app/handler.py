@@ -6,7 +6,7 @@ from health_insurance.HealthInsurance import HealthInsurance
 #loading the model 
 path = ''
 # path = '/home/daniel/repos/pa04_health_insurance_cross_sell/health_insurance_app/model/'
-model = pickle.load(open(path + '/health_insurance_app/model/healthinsurance.pkl', 'rb'))
+model = pickle.load(open(path + 'model/healthinsurance.pkl', 'rb'))
 
 app = Flask ( __name__ )
 
