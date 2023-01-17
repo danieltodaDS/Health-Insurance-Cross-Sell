@@ -7,7 +7,8 @@ class HealthInsurance:
     def __init__(self):
         
         # project home_path
-        self.home_path = '/home/daniel/repos/pa04_health_insurance_cross_sell/'
+        self.home_path = ''
+        # self.home_path = '/home/daniel/repos/pa04_health_insurance_cross_sell/'
         
         # load scalers and encoders from pickle
         self.annual_premium_scaler = pickle.load (open (self.home_path + 'health_insurance_app/features/annual_premium_scaler.pkl','rb'))

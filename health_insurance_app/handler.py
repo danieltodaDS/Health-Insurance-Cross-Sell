@@ -4,8 +4,9 @@ import pandas as pd
 from health_insurance.HealthInsurance import HealthInsurance
 
 #loading the model 
-path = '/home/daniel/repos/pa04_health_insurance_cross_sell/health_insurance_app/model/'
-model = pickle.load(open(path + 'healthinsurance.pkl', 'rb'))
+path = ''
+# path = '/home/daniel/repos/pa04_health_insurance_cross_sell/health_insurance_app/model/'
+model = pickle.load(open(path + '/health_insurance_app/model/healthinsurance.pkl', 'rb'))
 
 app = Flask ( __name__ )
 
