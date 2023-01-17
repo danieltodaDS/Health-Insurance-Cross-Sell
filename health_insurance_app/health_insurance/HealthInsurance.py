@@ -1,6 +1,6 @@
 import pickle
 import pandas as pd 
-import inflection
+
 
 class HealthInsurance: 
     
