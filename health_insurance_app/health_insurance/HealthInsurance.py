@@ -11,17 +11,21 @@ class HealthInsurance:
         # self.home_path = '/home/daniel/repos/pa04_health_insurance_cross_sell/'
         
         # load scalers and encoders from pickle
-        self.annual_premium_scaler = pickle.load (open (self.home_path + 'health_insurance_app/features/annual_premium_scaler.pkl','rb'))
+        self.annual_premium_scaler = pickle.load (open (self.home_path + 'features/annual_premium_scaler.pkl','rb'))
+#         self.annual_premium_scaler = pickle.load (open (self.home_path + 'health_insurance_app/features/annual_premium_scaler.pkl','rb'))
         
-        self.age_scaler =  pickle.load (open (self.home_path + 'health_insurance_app/features/age_scaler.pkl','rb'))
+        self.age_scaler =  pickle.load (open (self.home_path + 'features/age_scaler.pkl','rb'))
+#         self.age_scaler =  pickle.load (open (self.home_path + 'health_insurance_app/features/age_scaler.pkl','rb'))
         
-        self.vintage_scaler = pickle.load (open (self.home_path + 'health_insurance_app/features/vintage_scaler.pkl','rb'))
+        self.vintage_scaler = pickle.load (open (self.home_path + 'features/vintage_scaler.pkl','rb'))
+#         self.vintage_scaler = pickle.load (open (self.home_path + 'health_insurance_app/features/vintage_scaler.pkl','rb'))
         
-        self.region_code_scaler = pickle.load (open (self.home_path + 'health_insurance_app/features/region_code_scaler.pkl','rb'))
+        self.region_code_scaler = pickle.load (open (self.home_path + 'features/region_code_scaler.pkl','rb'))
+#         self.region_code_scaler = pickle.load (open (self.home_path + 'health_insurance_app/features/region_code_scaler.pkl','rb'))
         
-        self.policy_sales_channel_scaler = pickle.load (open (self.home_path + 'health_insurance_app/features/policy_sales_channel_scaler.pkl','rb'))
+        self.policy_sales_channel_scaler = pickle.load (open (self.home_path + 'features/policy_sales_channel_scaler.pkl','rb'))
         
-        self.vehicle_age_scaler = pickle.load (open (self.home_path + 'health_insurance_app/features/vehicle_age_scaler.pkl','rb'))
+        self.vehicle_age_scaler = pickle.load (open (self.home_path + 'features/vehicle_age_scaler.pkl','rb'))
         
         
         
