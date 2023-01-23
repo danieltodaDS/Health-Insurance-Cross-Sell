@@ -1,9 +1,11 @@
 # Health Insurance Cross-Sell
-
 ## This project aims to order a potential client list by propensity score
 
-#### This project was made by {cookiecutter.author}}.
-
+<img src="/img/chuttersnap-gts_Eh4g1lk-unsplash.jpg"
+  alt="Alt text"
+  title="cover image"
+  style="display: inline-block; margin: 0 auto; max-width: 600px;height:600px">
+  
 # 1. Business Problem.
 
 # 2. Business Assumptions.
