@@ -32,6 +32,7 @@ Here are some assumptions about the business context:
   - Cross-sell is to sell related or complementary products to a customer, in addiction to that product that started the commercial relationship 
   - Insurance business is an arrangement that garantee a compensation for a given loss, damage, illness, or death, in return for the payment of a premium. A premium is a sum of money that the customer needs to pay regularly to an insurance company for this guarantee.
   - Cumulative gains curve is an evaluation curve that shows the percentage of targets reached when considering a certain percentage of the population with the highest probability to be target according to the model. It enables to compare that performance with a random pick. 
+  - Cost of acquisition of customers (CAC) is the sum of investments made in customer acquisition divided by total customers acquired
 
 <details>
   <summary>Click to see the description of the columns</summary>
@@ -121,11 +122,50 @@ For this first iteration of project, 3 algorithms was tested: KNN(K-Nearest Neig
 |LogistRegresssion | 0.3342      |0.1339    |
 |XGBoost           | 0.3443   |   0.1379            |
 
-I selected XGBoost model for deployment since it had the best performance
-
 # 6. Machine Learning Model Performance
 
+The selected model was **XGBoost** since it achieved the better performance. Even so, its parameters was hipertuned and final results are shown below: 
+
+|Model   |  k         | Precision@k | Recall@k |
+|:----   |:---          | :------     |:------   |
+|XGBoost     |3000          | 0.4281      |0.1388     |
+|Random model|3000       | 0.1214      | 0.039|
+
+1. This means a 24% increase in precision@k and 0,6% na recall@k, after the hiperparameter fine tuning. 
+2. Compared to a Random model, in which the list of leads is sorted randomly, XGBoost performs +252% in precision@K and +255% in recall@K. In a random model is expected to pick the same percentage of interested as the percentage of sample, resulting in a 45 degree straight line 
+
+This comparisions can be better represented bellow in Cumulative Gains Curve
+
+![image](https://user-images.githubusercontent.com/110186368/214425723-2f93d6f7-602a-498f-ba13-94639a5c4636.png)
+
+
 # 7. Business Results
+To ilustrate the impact in business, consider 20% of this list of 76,222 customers and 9,256 interested (validation dataset).
+
+|Model        | % of list | % of all interested|Total of interested|
+|:----        |:------    |:------             |:----              |
+|XGBoost      |20         |20                  |1,851              |
+|Random model |20         |57.8                |5,349              | 
+
+At this percentile, the model find 2.89x more interested that a random pick. The lift curve below sumarize that increment for whole list.
+
+![image](https://user-images.githubusercontent.com/110186368/214435208-8ff6f4a3-9f5a-4914-b9dd-1d5366a3d698.png)
+
+The table below presents this lift in various percentis from 10 to 90. 
+
+|Percentil|Customers  |Lift      |Interested by model |Random pick | Reduction in CAC|
+|:----    |:------    |:------   |:----               |:-----      |:-----           |
+|10	      |7622	      |3.22	     |2980	              |925.58      |-0.74            |
+|20	      |15245	    |2.89	     |5349	              |1851.27	   |-0.35            |
+|30	      |22867	    |2.63	     |7305	              |2776.85	   |-0.22            |
+|40	      |30489	    |2.32	     |8573	              |3702.42	   |-0.15            |
+|50	      |38112	    |1.98	     |9155	              |4628.12	   |-0.11            |
+|60	      |45734	    |1.66	     |9245	              |5553.70	   |-0.07            |
+|70	      |53356	    |1.43	     |9246	              |6479.27	   |-0.05            |
+|80	      |60978	    |1.25	     |9251	              |7404.85	   |-0.03            |
+|90	      |68601	    |1.11	     |9254	              |8330.55	   |-0.01            |
+
+I also calculated the **reduction in CAC** for each percentile at this table. For example, at percentile 20%, it was estimated a reduction of 35% in CAC if used the list sorted by model, compared to a random pick
 
 # 8. Conclusions
 
