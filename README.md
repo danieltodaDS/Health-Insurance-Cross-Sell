@@ -63,19 +63,25 @@ Having a understanding about the business problem, 3 deliverables (previously pr
   - A data overview about this dataset, like the shape, types, columns description, and first order descriptive statistics. Useful to understand the data distribuition and which deeper analysis may be undertook 
   
 **Step 02. Feature Engineering:**
-  - Firstly, a mental map of hypothesis was drawn and based on it I stated some hypothesis. Given the data constraints, I focused on 10 hypothesis and  derived 5 features to analysis tasks and to give more inputs at feature selection 
+  - Firstly, a mental map was drawn on coggle.it and based on it I stated some hypothesis. Given the data constraints, I focused on 10 hypothesis and  derived 5 features to analysis tasks and to give more inputs at feature selection 
 
 **Step 03. Data Filtering:**
+  - Simple way to reduce dimensionality of dataset, but no business constraints having influence on this project were considered and no reducing was done
 
 **Step 04. Exploratory Data Analysis:**
+  - Univariate, bivariate and multivariate analysis to answer the hypothesis
 
 **Step 05. Data Preparation:**
+  - Split train & validation dataset, and apply some scaling and encoding techniques
 
 **Step 06. Feature Selection:**
+  - Based on feature importance gave by ExtraTreesClassifier
 
 **Step 07. Machine Learning Modelling:**
+  - Selection, training and cross-validation of 3 machine learning models
 
 **Step 08. Hyperparameter Fine Tunning:**
+  - Choose the best parameters for the model choose 
 
 **Step 09. Convert Model Performance to Business Values:**
 
@@ -107,9 +113,9 @@ Having a understanding about the business problem, 3 deliverables (previously pr
 
 # 10. Next Steps to Improve
 
-  - Apply another encoders like PCA
   - Apply other ML algorithms like LightGBM 
   - Apply Pipeline Class 
+  - Try PCA in data preparation step
   - Split this dataset in 3 slices (train, validation and test) and obtain the final error from this test dataset 
   
 # LICENSE
