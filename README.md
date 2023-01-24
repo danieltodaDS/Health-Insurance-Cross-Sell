@@ -57,49 +57,60 @@ Here are some assumptions about the business context:
 
 # 3. Solution Strategy
 
-Having a understanding about the business problem, 3 deliverables (previously presented) were defined as a result of this first development cicle. This cicle is divided in 10 steps, based on CRISP-DM process, presented below: 
+Having a understanding about the business problem, 3 deliverables (previously presented) were defined as a result of this first development cicle. Based on CRISP-DM process, this cicle is divided in 10 steps, presented below: 
 
-**Step 01. Data Description:**
-  - A data overview about this dataset, like the shape, types, columns description, and first order descriptive statistics. Useful to understand the data distribuition and which deeper analysis may be undertook 
+**Step 01. Data Description:** 
+A data overview about this dataset, like the shape, types, columns description, and first order descriptive statistics. Useful to understand the data distribuition and which deeper analysis may be undertook 
   
-**Step 02. Feature Engineering:**
-  - Firstly, a mental map was drawn on coggle.it and based on it I stated some hypothesis. Given the data constraints, I focused on 10 hypothesis and  derived 5 features to analysis tasks and to give more inputs at feature selection 
+**Step 02. Feature Engineering:** 
+Firstly, a mental map was drawn on coggle.it and based on it I stated some hypothesis. Given the data constraints, I focused on 10 hypothesis and  derived 5 features to analysis tasks and to give more inputs at feature selection 
 
 **Step 03. Data Filtering:**
-  - Simple way to reduce dimensionality of dataset, but no business constraints having influence on this project were considered and no reducing was done
+Simple way to reduce dimensionality of dataset, but no business constraints having influence on this project were considered and no reducing was done
 
 **Step 04. Exploratory Data Analysis:**
-  - Univariate, bivariate and multivariate analysis to answer the hypothesis
+Univariate, bivariate and multivariate analysis to answer the hypothesis
 
 **Step 05. Data Preparation:**
-  - Split train & validation dataset, and apply some scaling and encoding techniques
+Split train & validation dataset, and apply some scaling and encoding techniques
 
 **Step 06. Feature Selection:**
-  - Based on feature importance gave by ExtraTreesClassifier
+Selected feaures based on feature importance gave by ExtraTreesClassifier
 
 **Step 07. Machine Learning Modelling:**
-  - Selection, training and cross-validation of 3 machine learning models
+Selection, training and cross-validation of 3 machine learning models
 
 **Step 08. Hyperparameter Fine Tunning:**
-  - Choose the best parameters for the model choose 
+Choose the best parameters of the model selected at previous step 
 
 **Step 09. Convert Model Performance to Business Values:**
+Present the business result obtained by the model
 
-**Step 10. Deploy Modelo to Production:**
+**Step 10. Deploy Model to Production:**
+I published the model in a cloud environment and make it acessible through a Google Spreadsheet, so it can easily improve decisions of business team
 
 # 4. Top 3 Data Insights
 
-**Hypothesis 01:**
+**Hypothesis 01:** Interest is greater at customers older than 40 years old
 
-**True/False.**
+*True*. From this age there is a higher concentration among interested customers compared to no interested customers
 
-**Hypothesis 02:**
+![image](https://user-images.githubusercontent.com/110186368/214349558-798b61f8-d303-4171-af39-b8cff29d35e6.png)
 
-**True/False.**
 
-**Hypothesis 03:**
+**Hypothesis 02:** Interest rate is greater on newer vehicles
 
-**True/False.**
+*False*. The table and chart presented below, show a smaller rate of interested on newer vehicle compared to other age
+
+![image](https://user-images.githubusercontent.com/110186368/214350509-a7c17d22-1220-4874-be22-07e6053aad37.png)
+
+
+**Hypothesis 03:** Interest is higher among customers with health insurance for more than 6 months
+
+*False*. Being older than 6 month as a health insurance customers seems not to influence the interest on car insurance
+
+![image](https://user-images.githubusercontent.com/110186368/214351728-5ec56ad6-0517-48b0-ada2-243bea9a0124.png)
+
 
 # 5. Machine Learning Model Applied
 
