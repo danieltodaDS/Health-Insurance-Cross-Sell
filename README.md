@@ -113,8 +113,17 @@ I published the model in a cloud environment and make it acessible through a Goo
 
 
 # 5. Machine Learning Model Applied
+For this first iteration of project, 3 algorithms was tested: KNN(K-Nearest Neighbors), Logistic Regression and XGBoost. Since this is ranking problem, I used Top@K metrics to compare these models performance after cross-validating (k-fold = 5, k=3000)
 
-# 6. Machine Learning Modelo Performance
+|Model             | Precision@k | Recall@k |
+|:----             | :------     |:------   |
+|KNN               | 0.3144      |0.126     |
+|LogistRegresssion | 0.3342      |0.1339    |
+|XGBoost           | 0.3443   |   0.1379            |
+
+I selected XGBoost model for deployment since it had the best performance
+
+# 6. Machine Learning Model Performance
 
 # 7. Business Results
 
