@@ -1,16 +1,17 @@
 # Health Insurance Cross-Sell
 ## Ordering a potential client list by propensity score for a car insurance cross-sell
-*This project is part of the Data Science track of the Data Scientist community of Meigariom Lopes*
 
 <img src="/img/chuttersnap-gts_Eh4g1lk-unsplash.jpg"
   alt="Alt text"
   title="cover image"
   style="display: inline-block; margin: 0 auto; max-width: 600px;height:600px">
- 
+
+*This project was proposed in the study trail of the Meigarom Lopes Data Science Community*
+
 # 1. Business Problem.
   *Disclaimer: the business problem presented below is fictcious as well as Life Safety company. The dataset was collected from Kaggle's competition [Health Insurance Cross Sell](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction).*
   
-  Life Safety is a B2C company whose core business is offering health insuerance to individuals. Now it plans to implement a cross sell strategy focused on distribuiting car insurance to its customer base. 
+  Life Safety is a B2C company whose core business is offering health insurance to individuals. Now it plans to implement a cross sell strategy focused on distribuiting car insurance to its customer base. 
   
   Given that the budget for the sales is limited, it is necessary to prioritize those customers who are more likely to purchase the product. Then, a Data Scientist was consulted to build **a model to order the customer base by propensity score**. 
   
@@ -56,11 +57,13 @@ Here are some assumptions about the business context:
 
 # 3. Solution Strategy
 
-My strategy to solve this challenge was:
+Having a understanding about the business problem, 3 deliverables (previously presented) were defined as a result of this first development cicle. This cicle is divided in 10 steps, based on CRISP-DM process, presented below: 
 
 **Step 01. Data Description:**
-
+  - A data overview about this dataset, like the shape, types, columns description, and first order descriptive statistics. This first analysis helped to understanding how data is distribuited, which feature deserve a deeper analysis and what transformations may be necessary for a better performance of the model
+  
 **Step 02. Feature Engineering:**
+  - Firstly, a mental map of hypothesis was drawn and based on it I stated some hypothesis. Given the data constraints, I selected 10 hypothesis to be answered and then derived 5 features to help at analysis task, as well to give more inputs at feature selection 
 
 **Step 03. Data Filtering:**
 
@@ -104,6 +107,11 @@ My strategy to solve this challenge was:
 
 # 10. Next Steps to Improve
 
+  - Apply another encoders like PCA
+  - Apply other ML algorithms like LightGBM 
+  - Apply Pipeline Class 
+  - Split this dataset in 3 slices (train, validation and test) and obtain the final error from this test dataset 
+  
 # LICENSE
 
 # References
