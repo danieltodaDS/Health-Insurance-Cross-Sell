@@ -60,10 +60,10 @@ Here are some assumptions about the business context:
 Having a understanding about the business problem, 3 deliverables (previously presented) were defined as a result of this first development cicle. This cicle is divided in 10 steps, based on CRISP-DM process, presented below: 
 
 **Step 01. Data Description:**
-  - A data overview about this dataset, like the shape, types, columns description, and first order descriptive statistics. This first analysis helped to understanding how data is distribuited, which feature deserve a deeper analysis and what transformations may be necessary for a better performance of the model
+  - A data overview about this dataset, like the shape, types, columns description, and first order descriptive statistics. Useful to understand the data distribuition and which deeper analysis may be undertook 
   
 **Step 02. Feature Engineering:**
-  - Firstly, a mental map of hypothesis was drawn and based on it I stated some hypothesis. Given the data constraints, I selected 10 hypothesis to be answered and then derived 5 features to help at analysis task, as well to give more inputs at feature selection 
+  - Firstly, a mental map of hypothesis was drawn and based on it I stated some hypothesis. Given the data constraints, I focused on 10 hypothesis and  derived 5 features to analysis tasks and to give more inputs at feature selection 
 
 **Step 03. Data Filtering:**
 
