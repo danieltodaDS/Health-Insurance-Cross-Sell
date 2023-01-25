@@ -88,7 +88,7 @@ Choose the best parameters of the model selected at previous step
 Present the business result obtained by the model
 
 **Step 10. Deploy Model to Production:**
-I published the model in a cloud environment and make it acessible through a Google Spreadsheet, so it can easily improve decisions of business team
+I deployed the model at Render (free cloud environment) and make it acessible through a Google Spreadsheet, so it can easily improve decisions of business team
 
 # 4. Top 3 Data Insights
 
@@ -168,6 +168,11 @@ The table below presents this lift in various percentis from 10 to 90.
 I also calculated the **reduction in CAC** for each percentile at this table. For example, at percentile 20%, it was estimated a reduction of 35% in CAC if used the list sorted by model, compared to a random pick
 
 # 8. Conclusions
+As requested by **Life Safety**, it was built a model to predict the propensity score of purchasing car insurance among the health insurance customers, and a list was ordered with the higher propensity at the top. The results at Top@K measures demonstrated a better performance of this model compared to a random pick. 
+
+Both delivables, the google spreadsheet for automatic predictions and Cumulative Gains Curve, are available on the link below:
+
+[Life Safety Cross Sell APP](https://docs.google.com/spreadsheets/d/1ZLFAm5lgCvNIa3QIVBgVtakiBOqLCP3K9qktSzBl4LU/edit?usp=sharing)
 
 # 9. Lessons Learned
 
@@ -177,6 +182,7 @@ I also calculated the **reduction in CAC** for each percentile at this table. Fo
   - Apply Pipeline Class 
   - Try PCA in data preparation step
   - Split this dataset in 3 slices (train, validation and test) and obtain the final error from this test dataset 
+  - Improve the READ.ME with a chart explaning the API at a section *Deployment*
   
 # LICENSE
 
