@@ -187,6 +187,7 @@ Both delivables, the google spreadsheet for automatic predictions and Cumulative
   - Test PCA in data preparation step to reduce dimensionality
   - Improve the READ.ME with a chart explaning the API at a section *Deployment*
   - Review EDA
+  - Review the App on google sheets
   
 # References
 
