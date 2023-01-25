@@ -92,7 +92,7 @@ I deployed the model at Render (free cloud environment) and make it acessible th
 
 # 4. Top 3 Data Insights
 
-**Hypothesis 01:** Interest is greater at customers older than 40 years old
+**Hypothesis 01:** Interest rate is greater at customers older than 40 years old
 
 *True*. From this age there is a higher concentration among interested customers compared to no interested customers
 
@@ -175,19 +175,23 @@ Both delivables, the google spreadsheet for automatic predictions and Cumulative
 [Life Safety Cross Sell APP](https://docs.google.com/spreadsheets/d/1ZLFAm5lgCvNIa3QIVBgVtakiBOqLCP3K9qktSzBl4LU/edit?usp=sharing)
 
 # 9. Lessons Learned
+  - Access the predictions through google app scripts
+  - Metrics of evaluation of "learn to rank" machine learning problem
+  - Feature importance method to selectec the features to the model
+  - Features create at feature engineering seemed not to be relevant to model. One of them, 'age_goup' was strongly correlated to 'age', a discrete variable that did not need to be binned.  
 
 # 10. Next Steps to Improve
 
-  - Apply other ML algorithms like LightGBM 
-  - Apply Pipeline Class 
-  - Try PCA in data preparation step
-  - Split this dataset in 3 slices (train, validation and test) and obtain the final error from this test dataset 
+  - Test other ML algorithms like LightGBM 
+  - Apply Pipeline Class to improve readability of code
+  - Test PCA in data preparation step to reduce dimensionality
   - Improve the READ.ME with a chart explaning the API at a section *Deployment*
+  - Review EDA
   
-# LICENSE
-
 # References
 
 - https://www.investopedia.com/terms/c/cross-sell.asp
 - https://towardsdatascience.com/meaningful-metrics-cumulative-gains-and-lyft-charts-7aac02fc5c14
 - https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction
+- https://towardsdatascience.com/20-popular-machine-learning-metrics-part-2-ranking-statistical-metrics-22c3e5a937b6
+- https://machinelearningmastery.com/data-preparation-without-data-leakage/
